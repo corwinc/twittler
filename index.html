@@ -64,10 +64,7 @@
         // Load stream on page load
         loadStream();
 
-        // Refresh tweets by interval
-        // setInterval('window.location.reload()', 30000);
-
-        // Refresh Button On Click: Refresh Feed: NOT WORKING
+        // Refresh Button On Click: Refresh Feed
         $(".button").on('click', loadStream());
         
 
@@ -117,10 +114,7 @@
             $tweet.appendTo($feed);
 
             index -= 1;
-
-            console.log("ran loop on Shawn's stream");
           };
-          // window.open('user_timeline.html');
         });
 
       });
